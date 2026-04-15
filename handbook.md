@@ -78,7 +78,7 @@ This handbook provides quick access to the most important mappings and commands 
 - `gq` - Search replace word/selection
 
 ### Text Manipulation
-- `gw` - Change word under cursor
+- `gw` -  word under cursor
 - `J` / `K` (Visual) - Move lines up/down
 - `<` / `>` (Visual) - Indent/outdent
 - `<C-p>` - Cycle yanks (after paste)

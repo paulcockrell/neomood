@@ -13,6 +13,7 @@ return {
 				"yamlls",
 				"jsonls",
 				"cssls",
+				"crystalline",
 			}
 
 			require("mason").setup()
@@ -69,6 +70,10 @@ return {
 			vim.lsp.enable("ts_ls")
 			vim.lsp.enable("solargraph")
 			vim.lsp.enable("rubocop")
+			vim.lsp.enable("crystalline")
+
+			-- gleam
+			vim.lsp.enable("gleam")
 
 			local border_opts = {
 				border = { { "╭" }, { "─" }, { "╮" }, { "│" }, { "╯" }, { "─" }, { "╰" }, { "│" } },
