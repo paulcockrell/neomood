@@ -2,8 +2,8 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = {
-			"williamboman/mason.nvim",
-			"williamboman/mason-lspconfig.nvim",
+			"mason-org/mason.nvim",
+			"mason-org/mason-lspconfig.nvim",
 		},
 		event = "VeryLazy",
 		config = function()
@@ -22,7 +22,7 @@ return {
 				ensure_installed = mason_langs,
 			})
 
-			local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
+			local lsp_capabilities = vim.lsp.protocol.make_client_capabilities()
 
 			vim.diagnostic.config({ virtual_text = true })
 
